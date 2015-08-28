@@ -14,5 +14,6 @@ $(function() {
 });
 
 $('.slider').mouseover(function() {
-    $(this).css("opacity", '1');
+    var color = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
+    $(this).css("background-color", color);
 });
