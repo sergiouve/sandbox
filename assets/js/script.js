@@ -1,12 +1,12 @@
+var $slider = $('.slider.left');
+
 $(window).scroll(function() {
-    if($(this).scrollTop() > 100) {
-        $slider.stop().animate({left: '200px'}, 300);
+    if($(this).scrollTop() > 10) {
+        $slider.stop().animate({left: '0px'}, 200);
     } else {
-        $slider.stop().animate({left: '-90px'}, 300);
+        $slider.stop().animate({left: '-1000px'}, 300);
     }
 });
-
-var $slider = $('.slider');
 
 $(function() {
     $(".slider").each(function() {
